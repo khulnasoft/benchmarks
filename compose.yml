@@ -1,17 +1,17 @@
 version: '3.5'
 services:
-  kubench:
+  kenbench:
     build: .
     ports:
       - 8090:8090
     environment:
-      - KUBENCH_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.token
-      - KUBENCH_AWS_SECRET_ACCESS_KEY=1wA6U...
-      - KUBENCH_AWS_ACCESS_KEY_ID=AKI...
-      - KUBENCH_PRIVATE_KEY_LOCATION=${KUBENCH_PRIVATE_SSH_KEY}
-      - KUBENCH_FLY_TOKEN=AaB...
+      - KENBENCH_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.token
+      - KENBENCH_AWS_SECRET_ACCESS_KEY=1wA6U...
+      - KENBENCH_AWS_ACCESS_KEY_ID=AKI...
+      - KENBENCH_PRIVATE_KEY_LOCATION=${KENBENCH_PRIVATE_SSH_KEY}
+      - KENBENCH_FLY_TOKEN=AaB...
     networks:
-      - kubench
+      - kenbench
     volumes:
       - ./pb_data:/pb_data
 
@@ -26,7 +26,7 @@ services:
     depends_on:
       - victoriametrics
     networks:
-      - kubench
+      - kenbench
     ports:
       - '8125:8125'
 
@@ -44,7 +44,7 @@ services:
       - '--promscrape.config=/etc/prometheus/prometheus.yml'
       - '--remoteWrite.url=http://victoriametrics:8428/api/v1/write'
     networks:
-      - kubench
+      - kenbench
     restart: always
   victoriametrics:
     container_name: victoriametrics
@@ -66,7 +66,7 @@ services:
       - '--influxListenAddr=:8089'
       - '--vmalert.proxyURL=http://vmalert:8880'
     networks:
-      - kubench
+      - kenbench
     restart: always
   grafana:
     container_name: grafana
@@ -80,7 +80,7 @@ services:
       - ./.docker/provisioning/:/etc/grafana/provisioning/
       - ./.docker/dashboards/:/var/lib/grafana/dashboards/
     networks:
-      - kubench
+      - kenbench
     restart: always
   vmalert:
     container_name: vmalert
@@ -106,7 +106,7 @@ services:
       # when copypaste the line be aware of '$$' for escaping in '$expr'
       - '--external.alert.source=explore?orgId=1&left=["now-1h","now","VictoriaMetrics",{"expr":{{$$expr|jsonEscape|queryEscape}} },{"mode":"Metrics"},{"ui":[true,true,true,"none"]}]'
     networks:
-      - kubench
+      - kenbench
     restart: always
   alertmanager:
     container_name: alertmanager
@@ -118,7 +118,7 @@ services:
     ports:
       - 9093:9093
     networks:
-      - kubench
+      - kenbench
     restart: always
 
 volumes:
@@ -127,5 +127,5 @@ volumes:
   grafanadata: {}
 
 networks:
-  kubench:
+  kenbench:
     driver: bridge

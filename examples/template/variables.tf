@@ -42,12 +42,12 @@ variable "provider_access_token" {
 # Some variables that you can reuse.
 
 # You will probably need these to create ec2 loader instance.
-# You should set values for these variables in kubench.
+# You should set values for these variables in kenbench.
 
 variable "ec2_name" {
   description = "Name of ec2 loader instance"
   type        = string
-  default     = "kuloader" # run ID
+  default     = "supaloader" # run ID
 }
 
 variable "instance_type" {
@@ -93,7 +93,7 @@ variable "sut_name" {
   default     = ""
 }
 
-# Leave these variables as is. They will be passed by Kubench. 
+# Leave these variables as is. They will be passed by Kenbench. 
 # You don't need to set values for it.
 
 variable "testrun_name" {
@@ -117,13 +117,13 @@ variable "benchmark_id" {
   type        = string
 }
 
-variable "kubench_token" {
-  description = "Token to access the kubench"
+variable "kenbench_token" {
+  description = "Token to access the kenbench"
   type        = string
   sensitive   = true
 }
 
-variable "kubench_uri" {
-  description = "URI of the kubench server"
+variable "kenbench_uri" {
+  description = "URI of the kenbench server"
   type        = string
 }

@@ -10,8 +10,8 @@ import (
 
 	"github.com/pocketbase/dbx"
 	"github.com/rs/zerolog/log"
-	"github.com/khulnasoft/kubench/internal/archive"
-	"github.com/khulnasoft/kubench/models"
+	"github.com/khulnasoft/kenbench/internal/archive"
+	"github.com/khulnasoft/kenbench/models"
 )
 
 func (app *App) runBenchmark(run *models.Run) error {

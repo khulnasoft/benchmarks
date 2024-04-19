@@ -45,7 +45,7 @@
 
     async function loadAppName() {
         try {
-            $appName = "kubench";
+            $appName = "kenbench";
         } catch (err) {
             console.warn("Failed to load app name.", err);
         }
@@ -136,7 +136,7 @@
 
     <div class="app-footer">
       <div class="footer-item">
-        <a href="https://khulnasoft.com/?ref=kubench" rel=external target="_blank" use:link>
+        <a href="https://khulnasoft.com/?ref=kenbench" rel=external target="_blank" use:link>
           <span>Made by Khulnasoft</span>
         </a>
       </div>

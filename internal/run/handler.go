@@ -5,8 +5,8 @@ import (
 	"strings"
 
 	"github.com/labstack/echo/v5"
-	"github.com/khulnasoft/kubench/internal/execution"
-	"github.com/khulnasoft/kubench/models"
+	"github.com/khulnasoft/kenbench/internal/execution"
+	"github.com/khulnasoft/kenbench/models"
 )
 
 // nameRegex is a regex for validating run names.

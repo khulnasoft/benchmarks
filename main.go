@@ -11,14 +11,14 @@ import (
 	"github.com/spf13/viper"
 
 	"github.com/pocketbase/pocketbase"
-	"github.com/khulnasoft/kubench/internal/execution"
-	"github.com/khulnasoft/kubench/internal/terraform"
-	_ "github.com/khulnasoft/kubench/migrations"
-	"github.com/khulnasoft/kubench/pipelines"
+	"github.com/khulnasoft/kenbench/internal/execution"
+	"github.com/khulnasoft/kenbench/internal/terraform"
+	_ "github.com/khulnasoft/kenbench/migrations"
+	"github.com/khulnasoft/kenbench/pipelines"
 )
 
 func main() {
-	viper.SetEnvPrefix("KUBENCH")
+	viper.SetEnvPrefix("KENBENCH")
 	viper.AutomaticEnv()
 
 	log.Logger = log.Level(zerolog.InfoLevel)

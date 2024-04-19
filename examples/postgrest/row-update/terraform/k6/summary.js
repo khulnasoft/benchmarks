@@ -6,9 +6,9 @@ const testrun = __ENV.TEST_RUN
 const origin = __ENV.TEST_ORIGIN
 const benchmark = __ENV.BENCHMARK_ID
 const run = __ENV.RUN_ID
-const token = __ENV.KUBENCH_TOKEN
-const kubench_uri = __ENV.KUBENCH_URI
-  ? __ENV.KUBENCH_URI
+const token = __ENV.KENBENCH_TOKEN
+const kenbench_uri = __ENV.KENBENCH_URI
+  ? __ENV.KENBENCH_URI
   : 'http://localhost:8090'
 
 /**
@@ -34,7 +34,7 @@ export function handleSummary(data) {
     }
 
     const resp = http.post(
-      `${kubench_uri}/api/collections/runs/records`,
+      `${kenbench_uri}/api/collections/runs/records`,
       JSON.stringify(report),
       {
         headers: {
@@ -58,7 +58,7 @@ export function handleSummary(data) {
     }
 
     const resp = http.patch(
-      `${kubench_uri}/api/collections/runs/records/${run}`,
+      `${kenbench_uri}/api/collections/runs/records/${run}`,
       JSON.stringify(report),
       {
         headers: {

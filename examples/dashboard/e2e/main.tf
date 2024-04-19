@@ -35,8 +35,8 @@ module "eu-central-1" {
   testrun_id      = var.testrun_id
   test_origin     = var.test_origin
   benchmark_id    = var.benchmark_id
-  kubench_token = var.kubench_token
-  kubench_uri   = var.kubench_uri
+  kenbench_token = var.kenbench_token
+  kenbench_uri   = var.kenbench_uri
 
   gen_load = false
   rate     = var.rate
@@ -72,8 +72,8 @@ module "eu-west-2" {
   testrun_id      = var.testrun_id
   test_origin     = var.test_origin
   benchmark_id    = var.benchmark_id
-  kubench_token = var.kubench_token
-  kubench_uri   = var.kubench_uri
+  kenbench_token = var.kenbench_token
+  kenbench_uri   = var.kenbench_uri
 
   gen_load = true
   rate     = var.rate

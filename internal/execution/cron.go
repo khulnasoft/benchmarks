@@ -8,7 +8,7 @@ import (
 	"github.com/go-co-op/gocron"
 	"github.com/pocketbase/dbx"
 	"github.com/rs/zerolog/log"
-	"github.com/khulnasoft/kubench/models"
+	"github.com/khulnasoft/kenbench/models"
 )
 
 func (app *App) NewCron() error {

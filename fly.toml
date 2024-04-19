@@ -1,6 +1,6 @@
-# fly.toml file generated for kubench on 2022-08-12T03:44:25+03:00
+# fly.toml file generated for kenbench on 2022-08-12T03:44:25+03:00
 
-app = "kubench"
+app = "kenbench"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
@@ -10,7 +10,7 @@ processes = []
   buildpacks = ["gcr.io/paketo-buildpacks/go"]
 
 [env]
-  KUBENCH_URI = "https://kubench.fly.dev"
+  KENBENCH_URI = "https://kenbench.fly.dev"
 
 [experimental]
   allowed_public_ports = []
@@ -43,5 +43,5 @@ processes = []
     timeout = "2s"
 
 [mounts]
-  source="kubench"
+  source="kenbench"
   destination="/pb_data"

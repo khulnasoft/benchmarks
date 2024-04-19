@@ -1,4 +1,4 @@
-// Package ui handles the Kubench dashboard frontend embedding.
+// Package ui handles the Kenbench dashboard frontend embedding.
 package web
 
 import (

@@ -8,7 +8,7 @@ import { Trend, Counter } from 'k6/metrics'
 // 'trends' is just a set of useful trends to be used in summary result like p95, med, p0.01
 import { scenario, trends } from './common.js'
 
-// export handleSummary from sumary.js to upload the report to Kubench
+// export handleSummary from sumary.js to upload the report to Kenbench
 export { handleSummary } from './summary.js'
 
 // you may access the environment variables specified in entrypoint.sh.tpl with __ENV.VAR_NAME

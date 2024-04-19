@@ -33,13 +33,13 @@ module "script" {
   key_name             = var.key_name
   private_key_location = var.private_key_location
 
-  # these will be passed to the script by kubench
+  # these will be passed to the script by kenbench
   testrun_name    = var.testrun_name
   testrun_id      = var.testrun_id
   test_origin     = var.test_origin
   benchmark_id    = var.benchmark_id
-  kubench_token = var.kubench_token
-  kubench_uri   = var.kubench_uri
+  kenbench_token = var.kenbench_token
+  kenbench_uri   = var.kenbench_uri
 
   # variables to pass to load script
   duration  = var.duration

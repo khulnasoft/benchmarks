@@ -14,19 +14,19 @@
       "instance_type": "t4g.micro",
       "ssh_username": "admin",
       "temporary_key_pair_type": "ed25519",
-      "ami_name": "kubench-ami-{{timestamp}}",
+      "ami_name": "kenbench-ami-{{timestamp}}",
       "tags": {
-        "appType": "kubench",
-        "creator": "kubench-packer"
+        "appType": "kenbench",
+        "creator": "kenbench-packer"
       },
       "run_tags": {
-        "creator": "kubench"
+        "creator": "kenbench"
       },
       "snapshot_tags": {
-        "creator": "kubench"
+        "creator": "kenbench"
       },
       "run_volume_tags": {
-        "creator": "kubench"
+        "creator": "kenbench"
       },
       "user_data_file": "./defaults.cfg"
     }

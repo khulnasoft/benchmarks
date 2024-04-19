@@ -5,9 +5,9 @@ import (
 
 	"github.com/labstack/echo/v5"
 	"github.com/pocketbase/pocketbase/core"
-	"github.com/khulnasoft/kubench/internal/execution"
-	"github.com/khulnasoft/kubench/internal/run"
-	"github.com/khulnasoft/kubench/middlewares"
+	"github.com/khulnasoft/kenbench/internal/execution"
+	"github.com/khulnasoft/kenbench/internal/run"
+	"github.com/khulnasoft/kenbench/middlewares"
 )
 
 func InitRoutes(app *execution.App) {

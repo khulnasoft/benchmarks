@@ -5,8 +5,8 @@ import (
 	"github.com/labstack/echo/v5/middleware"
 	"github.com/pocketbase/pocketbase/apis"
 	"github.com/pocketbase/pocketbase/core"
-	"github.com/khulnasoft/kubench/internal/execution"
-	"github.com/khulnasoft/kubench/web"
+	"github.com/khulnasoft/kenbench/internal/execution"
+	"github.com/khulnasoft/kenbench/web"
 )
 
 func InitUI(app *execution.App) {

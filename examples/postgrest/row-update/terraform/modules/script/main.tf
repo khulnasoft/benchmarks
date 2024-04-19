@@ -14,7 +14,7 @@ resource "aws_instance" "k6" {
     terraform   = "true"
     environment = "qa"
     app         = var.sut_name
-    creator     = "kubench"
+    creator     = "kenbench"
   }
 }
 
@@ -61,8 +61,8 @@ resource "null_resource" "remote" {
         benchmark_id    = var.benchmark_id
         testrun_name    = var.testrun_name
         test_origin     = var.test_origin
-        kubench_token = var.kubench_token
-        kubench_uri   = var.kubench_uri
+        kenbench_token = var.kenbench_token
+        kenbench_uri   = var.kenbench_uri
       }
     )
   }
@@ -80,8 +80,8 @@ resource "null_resource" "remote" {
       "echo \"export BENCHMARK_ID='${var.benchmark_id}'\" >> ~/.bashrc",
       "echo \"export TEST_RUN='${var.testrun_name}'\" >> ~/.bashrc",
       "echo \"export TEST_ORIGIN='${var.test_origin}'\" >> ~/.bashrc",
-      "echo \"export KUBENCH_TOKEN='${var.kubench_token}'\" >> ~/.bashrc",
-      "echo \"export KUBENCH_URI='${var.kubench_uri}'\" >> ~/.bashrc",
+      "echo \"export KENBENCH_TOKEN='${var.kenbench_token}'\" >> ~/.bashrc",
+      "echo \"export KENBENCH_URI='${var.kenbench_uri}'\" >> ~/.bashrc",
     ]
   }
 

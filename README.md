@@ -1,8 +1,8 @@
-# kubench
+# kenbench
 
 Platform to run and keep the history of benchmark runs.
 
-![Kubench Banner](https://user-images.githubusercontent.com/58992960/186262109-e6c9ab69-e5f7-4fd0-bd62-5ea08ab3fe60.png)
+![Kenbench Banner](https://user-images.githubusercontent.com/58992960/186262109-e6c9ab69-e5f7-4fd0-bd62-5ea08ab3fe60.png)
 
 ## References
 
@@ -16,4 +16,4 @@ Platform to run and keep the history of benchmark runs.
 
 ## More Info
 
-More information about the project can be found on the [Github Wiki](https://github.com/khulnasoft/kubench/wiki)
+More information about the project can be found on the [Github Wiki](https://github.com/khulnasoft/kenbench/wiki)

@@ -1,6 +1,6 @@
-# Kubench dashboard UI
+# Kenbench dashboard UI
 
-This is the Kubench dashboard UI (built with Svelte and Vite and based on PocketBase Admin UI).
+This is the Kenbench dashboard UI (built with Svelte and Vite and based on PocketBase Admin UI).
 
 The used admins avatars are from <https://boringavatars.com/>.
 

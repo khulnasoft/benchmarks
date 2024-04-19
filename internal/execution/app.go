@@ -3,7 +3,7 @@ package execution
 import (
 	"github.com/go-co-op/gocron"
 	"github.com/pocketbase/pocketbase"
-	"github.com/khulnasoft/kubench/internal/terraform"
+	"github.com/khulnasoft/kenbench/internal/terraform"
 )
 
 type App struct {

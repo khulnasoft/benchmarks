@@ -4,7 +4,7 @@ import (
 	"github.com/pocketbase/pocketbase/apis"
 	"github.com/pocketbase/pocketbase/core"
 	"github.com/pocketbase/pocketbase/models"
-	"github.com/khulnasoft/kubench/internal/execution"
+	"github.com/khulnasoft/kenbench/internal/execution"
 )
 
 func InitUser(app *execution.App) {

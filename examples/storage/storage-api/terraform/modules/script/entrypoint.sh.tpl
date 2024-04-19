@@ -17,13 +17,13 @@ telegraf --config telegraf.conf &>/dev/null &
 # go to k6 dir and run k6
 cd /tmp/k6 || exit 1
 
-# leave these as is. Kubench will pass it and it is needed to upload the report.
+# leave these as is. Kenbench will pass it and it is needed to upload the report.
 export RUN_ID="${testrun_id}"
 export BENCHMARK_ID="${benchmark_id}"
 export TEST_RUN="${testrun_name}"
 export TEST_ORIGIN="${test_origin}"
-export KUBENCH_TOKEN="${kubench_token}"
-export KUBENCH_URI="${kubench_uri}"
+export KENBENCH_TOKEN="${kenbench_token}"
+export KENBENCH_URI="${kenbench_uri}"
 
 # this is the place to add your variables, required by benchmark.
 export ANON_TOKEN="${anon_token}"

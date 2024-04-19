@@ -19,14 +19,14 @@ variable "benchmark_id" {
   type        = string
 }
 
-variable "kubench_token" {
-  description = "Token to access the kubench"
+variable "kenbench_token" {
+  description = "Token to access the kenbench"
   type        = string
   sensitive   = true
 }
 
-variable "kubench_uri" {
-  description = "URI of the kubench server"
+variable "kenbench_uri" {
+  description = "URI of the kenbench server"
   type        = string
 }
 
@@ -39,7 +39,7 @@ variable "instances_count" {
 variable "ec2_name" {
   description = "Name of ec2 loader instance"
   type        = string
-  default     = "kuloader" # run ID
+  default     = "supaloader" # run ID
 }
 
 variable "instance_type" {

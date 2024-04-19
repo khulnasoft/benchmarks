@@ -35,8 +35,8 @@ module "script" {
   testrun_id      = var.testrun_id
   test_origin     = var.test_origin
   benchmark_id    = var.benchmark_id
-  kubench_token = var.kubench_token
-  kubench_uri   = var.kubench_uri
+  kenbench_token = var.kenbench_token
+  kenbench_uri   = var.kenbench_uri
 
   anon_token          = var.anon_token
   service_token       = var.service_token
